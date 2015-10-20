@@ -92,23 +92,23 @@
 # See README for details.
 #
 class apt_dater (
-  $version          = apt_dater::params::version,
-  $role             = apt_dater::params::role,
-  $customer         = apt_dater::params::customer,
-  $package          = apt_dater::params::package,
-  $host_package     = apt_dater::params::host_package,
-  $host_update_cmd  = apt_dater::params::host_update_cmd,
-  $host_user        = apt_dater::params::host_user,
-  $host_home_dir    = apt_dater::params::host_home_dir,
-  $reuse_host_user  = apt_dater::params::reuse_host_user,
-  $reuse_ssh        = apt_dater::params::reuse_ssh,
-  $ssh_key_options  = apt_dater::params::ssh_key_options,
-  $ssh_key_type     = apt_dater::params::ssh_key_type,
-  $ssh_key          = apt_dater::params::ssh_key,
-  $ssh_port         = apt_dater::params::ssh_port,
-  $manager_user     = apt_dater::params::manager_user,
-  $manager_home_dir = apt_dater::params::manager_home_dir,
-  $manager_ssh_key  = apt_dater::params::manager_ssh_key
+  $version          = $apt_dater::params::version,
+  $role             = $apt_dater::params::role,
+  $customer         = $apt_dater::params::customer,
+  $package          = $apt_dater::params::package,
+  $host_package     = $apt_dater::params::host_package,
+  $host_update_cmd  = $apt_dater::params::host_update_cmd,
+  $host_user        = $apt_dater::params::host_user,
+  $host_home_dir    = $apt_dater::params::host_home_dir,
+  $reuse_host_user  = $apt_dater::params::reuse_host_user,
+  $reuse_ssh        = $apt_dater::params::reuse_ssh,
+  $ssh_key_options  = $apt_dater::params::ssh_key_options,
+  $ssh_key_type     = $apt_dater::params::ssh_key_type,
+  $ssh_key          = $apt_dater::params::ssh_key,
+  $ssh_port         = $apt_dater::params::ssh_port,
+  $manager_user     = $apt_dater::params::manager_user,
+  $manager_home_dir = $apt_dater::params::manager_home_dir,
+  $manager_ssh_key  = $apt_dater::params::manager_ssh_key
   ) inherits apt_dater::params {
   $bool_reuse_host_user = any2bool($apt_dater::reuse_host_user)
   $bool_reuse_ssh = any2bool($apt_dater::reuse_ssh)
