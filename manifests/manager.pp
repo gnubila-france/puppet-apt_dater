@@ -47,7 +47,7 @@ class apt_dater::manager {
 
     "${apt_dater::manager_ad_conf_dir}/apt-dater.conf":
       ensure  => 'file',
-      content => template('apt/apt-dater.conf.erb'),
+      content => template('apt_dater/apt-dater.conf.erb'),
       mode    => '0600',
       owner   => $apt_dater::manager_user,
       require => File[$apt_dater::manager_ad_conf_dir];
@@ -61,14 +61,14 @@ class apt_dater::manager {
 
     "${apt_dater::manager_ad_conf_dir}/screenrc":
       ensure  => 'file',
-      content => template('apt/apt-dater-screenrc.erb'),
+      content => template('apt_dater/apt-dater-screenrc.erb'),
       mode    => '0600',
       owner   => $apt_dater::manager_user,
       require => File[$apt_dater::manager_ad_conf_dir];
 
     '/usr/local/bin/update-apt-dater-hosts':
       ensure  => 'file',
-      content => template('apt/update-apt-dater-hosts.erb'),
+      content => template('apt_dater/update-apt-dater-hosts.erb'),
       mode    => '0755',
       owner   => root,
       group   => root,
@@ -76,7 +76,7 @@ class apt_dater::manager {
 
     $apt_dater::manager_fragments_dir:
       ensure  => 'directory',
-      source  => 'puppet:///modules/apt/empty',
+      source  => 'puppet:///modules/apt_dater/empty',
       mode    => '0700',
       owner   => $apt_dater::manager_user,
       recurse => true,
