@@ -2,7 +2,7 @@
 
 Puppet module to manage apt_dater.
 
-Code extracted from example42/puppet-apt module.
+Code extracted from example42/puppet-apt, check it if needed a full apt ecosystem management module.
 
 Originally written by Boian Mihailov - boian.mihailov@gmail.com
 Added features by Marco Bonetti
