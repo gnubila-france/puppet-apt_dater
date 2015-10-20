@@ -17,7 +17,7 @@ class apt_dater::host {
         owner  => $apt_dater::host_user,
         group  => $apt_dater::host_user,
         mode   => '0750',
-        source => 'puppet:///modules/apt/apt-dater-host-yum',
+        source => 'puppet:///modules/apt_dater/apt-dater-host-yum',
       }
     }
     default: {
