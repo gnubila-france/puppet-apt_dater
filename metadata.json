@@ -1,0 +1,43 @@
+{
+  "name": "gnubilafrance-apt_dater",
+  "version": "0.0.1",
+  "author": "Baptiste Grenier <bgrenier@gnubila.fr>",
+  "license": "MIT",
+  "summary": "Simple apt-dater configuration",
+
+  "source": "https://github.com/gnubila-france/puppet-apt_dater",
+  "project_page": "https://github.com/gnubila-france/puppet-apt_dater",
+  "issues_url": "https://github.com/gnubila-france/puppet-apt_dater/issues",
+
+  "tags": [ "apt_dater" ],
+
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ],
+
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">= 2.3.0" }
+  ]
+}
