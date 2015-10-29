@@ -28,11 +28,6 @@ class apt_dater::manager {
   }
 
   # manage the ~/.config directory
-  file { $apt_dater::manager_home_conf_dir:
-    ensure => 'directory',
-    owner  => $apt_dater::manager_user,
-  }
-
   file {
     $apt_dater::manager_conf_dir:
       ensure  => 'directory',
