@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find "<%= scope.lookupvar('apt::dater::manager_fragments_dir') %>" -maxdepth 1 -xdev -type f \
+find "<%= scope.lookupvar('apt_dater::manager_fragments_dir') %>" -maxdepth 1 -xdev -type f \
 	| perl -ne '
 		chomp;
 		/\/([^\/]*):([^\/]*):([^\/]*)$/;
