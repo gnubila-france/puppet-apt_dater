@@ -11,10 +11,10 @@
 [SSH]
 # SSH binary
 Cmd=/usr/bin/ssh
-<% if scope.lookupvar('apt::dater::reuse_ssh') -%>
+<% if scope.lookupvar('apt_dater::reuse_ssh') -%>
 OptionalCmdFlags=-t
 <% else -%> 
-OptionalCmdFlags=-t -i <%= scope.lookupvar('apt::dater::manager_ssh_private_file') %>
+OptionalCmdFlags=-t -i <%= scope.lookupvar('apt_dater::manager_ssh_private_file') %>
 <% end -%> 
 
 # SFTP binary

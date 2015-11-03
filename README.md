@@ -24,7 +24,7 @@ All the variables used in this module are defined in the apt_dater::params class
 
 - Configure a host to be controlled by apt-dater
 
-  class { 'apt::dater':
+  class { 'apt_dater':
     customer     => 'ACME Corp.',
     ssh_key_type => 'ssh-rsa',
     ssh_key      => template('site/apt-dater.pub.key');
@@ -32,7 +32,7 @@ All the variables used in this module are defined in the apt_dater::params class
 
 - Configure an apt-dater controller (no self-management) for root
 
-  class { 'apt::dater':
+  class { 'apt_dater':
     role            => 'manager',
     manager_ssh_key => template('site/apt-dater.priv.key');
   }
