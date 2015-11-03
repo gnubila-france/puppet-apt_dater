@@ -1,6 +1,6 @@
 {
   "name": "gnubilafrance-apt_dater",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Baptiste Grenier <bgrenier@gnubila.fr>",
   "license": "MIT",
   "summary": "Simple apt-dater configuration",
