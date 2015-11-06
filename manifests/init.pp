@@ -118,7 +118,7 @@ class apt_dater (
   $manager_conf_dir = "${apt_dater::manager_home_dir}/.config"
   $manager_ad_conf_dir = "${apt_dater::manager_conf_dir}/apt-dater"
   $manager_ad_hosts_file = "${apt_dater::manager_ad_conf_dir}/hosts.conf"
-  $manager_fragments_dir = "${settings::vardir}/apt-dater-fragments"
+  $manager_fragments_dir = "${::puppet_vardir}/apt-dater-fragments"
 
   # Managed resources
   if $apt_dater::role == 'host' or $apt_dater::role == 'all' {
