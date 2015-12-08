@@ -9,6 +9,8 @@ Added features by Marco Bonetti
 Adapted to Example42 NextGen layout by Alessandro Franceschi
 Features removed by Baptiste Grenier.
 
+Yum-based update manager taken from https://github.com/DE-IBH/apt-dater-host/
+
 Licence: Apache2
 
 ## DESCRIPTION
