@@ -1,5 +1,8 @@
 # Puppet module: apt_dater
 
+[![Puppet Forge](http://img.shields.io/puppetforge/v/gnubilafrance/apt_dater.svg)](https://forge.puppetlabs.com/gnubilafrance/apt_dater)
+[![Build Status](https://travis-ci.org/gnubila-france/puppet-apt_dater.png?branch=master)](https://travis-ci.org/gnubila-france/puppet-apt_dater)
+
 Puppet module to manage apt_dater.
 
 Code extracted from example42/puppet-apt, check it if needed a full apt ecosystem management module.
